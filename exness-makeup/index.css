@@ -649,6 +649,9 @@ a:hover {
 }
 
 .links__col {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -667,8 +670,8 @@ a:hover {
 
 @media (max-width: 64rem) {
 	.links {
-		-webkit-align-items: center;
-		        align-items: center;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
 
 		margin: 0;
 		padding: .625rem /* 10/16 */ 2rem /* 32/16 */;
@@ -781,6 +784,6 @@ a:hover {
 
 @media (min-width: 64.00625rem) {
 	.footer__note {
-		width: 70%;
+		width: calc(100% - 350px);
 	}
 }
